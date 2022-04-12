@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Quick Sort</title>
+</head>
+<!-- linking with css -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<body>
+	<main>
+		<!-- will be used in css -->
+		<section id="sortDetail">
+
+			<article class="heading">Quick Sort<p id="small">(Click here to Hide Details)</p>
+			</article>
+			<article id="panel">
+				<table id="detail">
+					<tbody>
+						<!-- time complexity -->
+						<tr>
+							<td>Algorithm: QuickSort| Runtime: O(n Log(n)) average, O(n^2) worst case.|Memory:
+								O(Log(n))</td>
+						</tr>
+						<tr>
+							<td>Description: If the array contains only one element or zero elements then the array
+								is sorted.</td>
+						</tr>
+						<tr>
+							<td>If the array contains more then one element then:</td>
+						</tr>
+						<tr>
+							<td>
+								<ol>
+									<!-- explaination of algorithm -->
+									<li>Select an element from the array. This element is called the "pivot
+										element". For example select the element in the middle of the array.</li>
+									<li>All elements which are smaller then the pivot element are placed in one
+										array and all elements which are larger are placed in another array.</li>
+									<li>Sort both arrays by recursively applying Quicksort to them.</li>
+									<li>Combine the arrays</li>
+								</ol>
+							</td>
+						</tr>
+						<tr>
+							<td>Quicksort can be implemented to sort "in-place". This means that the sorting takes
+								place in the array and that no additional array need to be created.</td>
+						</tr>
+					</tbody>
+				</table>
+			</article>
+		</section>
+		<br>
+		<section id="ls">
+		</section>
+		<section>
+			<!-- linking button with js -->
+			<button>Sort Now!</button>
+		</section>
+</body>
+<script src="script.js"></script>
+
+</html>
